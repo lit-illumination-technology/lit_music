@@ -2,7 +2,7 @@ from music_visualization_framework import music_analyzer
 
 MUSIC_VIS_FIELD = '_singleton_music_vis'
 
-def create_music_analyzer(controller):
+def create_music_analyzer(controller, args):
     app = music_analyzer.Analyzer("/dev/ttyACM0")
     app.start()
     return app
