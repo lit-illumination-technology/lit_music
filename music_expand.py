@@ -22,6 +22,7 @@ def update(lights, step, state):
         for n in range(int(center-val), int(center+val)):
             h, s = hues[n]
             hues[n] = (h*color_h, s+1)
+    lights.clear()
     for n, (h, s) in enumerate(hues):
         if s is not 0:
             lights.set_pixel_hsv(n, h, 1, 1)
