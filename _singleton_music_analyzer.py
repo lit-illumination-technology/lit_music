@@ -14,6 +14,7 @@ music_vis_schema = {
             'default_gen': create_music_analyzer
         },
         'user_input': False,
-        'singleton': True
+        'singleton': True,
+        'index': 0
     }
 }

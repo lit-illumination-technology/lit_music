@@ -1,5 +1,4 @@
 import colorsys
-import math
 import random
 
 from . import _singleton_music_analyzer
@@ -28,6 +27,7 @@ schema = {
         'value': {
             'type': 'function',
             'default_gen': create_beat_listener,
+            'order': -1
         },
         'user_input': False
     }

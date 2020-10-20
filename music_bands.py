@@ -12,7 +12,7 @@ schema.update(_singleton_music_analyzer.music_vis_schema)
 
 def update(lights, step, state):
     app = state[_singleton_music_analyzer.MUSIC_VIS_FIELD]
-    lights_per_band = lights.num_leds / len(app.bands)
+    lights_per_band = lights.size / len(app.bands)
     for i, band in enumerate(app.bands):
         color_h = float(i)/len(app.bands)
         for n in range(int(lights_per_band * i), int(lights_per_band * (i + 1))):
